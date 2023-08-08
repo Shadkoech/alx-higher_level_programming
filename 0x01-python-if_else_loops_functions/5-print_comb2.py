@@ -1,0 +1,8 @@
+#!/usr/bin/python3
+
+# {:02} specifies the minimum width of a number
+for number in range(100):
+    if number != 99:
+        print("{:02}".format(number), end=", ")
+    else:
+        print("{}".format(number))
