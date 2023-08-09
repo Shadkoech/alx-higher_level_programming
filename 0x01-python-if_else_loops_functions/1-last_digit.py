@@ -1,8 +1,9 @@
 #!/usr/bin/python3
+
 import random
 number = random.randint(-10000, 10000)
 if number < 0:
-    Lastdigit = -(number % 10)
+    Lastdigit = -(abs(number) % 10)
 else:
     Lastdigit = (number % 10)
 if Lastdigit > 5:  # Assign message(Msg) in regard to last digit
