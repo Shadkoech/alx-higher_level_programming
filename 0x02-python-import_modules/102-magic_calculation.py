@@ -1,11 +1,10 @@
 #!/usr/bin/python3
 
 # bytecode takes two arguments a and b and performs + or - to it
-
 def magic_calculation(a, b):
     '''Obtaining a match for the bytecode given'''
 
-    from magic_calculation_102 import *
+    from magic_calculation_102 import add, sub
 
     if (a < b):
         c = add(a, b)
