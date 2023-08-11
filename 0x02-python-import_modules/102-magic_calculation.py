@@ -1,16 +1,18 @@
 #!/usr/bin/python3
 
+# bytecode takes two arguments a and b and performs + or - to it
+
 def magic_calculation(a, b):
     '''Obtaining a match for the bytecode given'''
 
     from magic_calculation_102 import *
 
     if (a < b):
-        C = add(a, b)
+        c = add(a, b)
 
         for index in range(4, 6):
-            C = add(C, index)
-        return (C)
+            c = add(c, index)
+        return (c)
 
     else:
         return (sub(a, b))
