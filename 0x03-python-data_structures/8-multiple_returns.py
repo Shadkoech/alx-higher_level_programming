@@ -7,7 +7,7 @@ def multiple_returns(sentence):
     y = sentence[0]
 
     if x == 0:
-        y == None
+        my_tuple = 0, "None"
     else:
         my_tuple = (x, y)
         return my_tuple
