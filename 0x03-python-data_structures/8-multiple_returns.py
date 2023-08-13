@@ -6,7 +6,7 @@ def multiple_returns(sentence):
 
     kl_tuple = ()
     if len(sentence) == 0:
-        kl_tuple = (0, "None")
+        kl_tuple = (0, None)
     else:
         kl_tuple = (len(sentence), sentence[0])
         return kl_tuple
