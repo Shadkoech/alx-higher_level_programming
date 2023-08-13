@@ -2,7 +2,7 @@
 
 # Replacing an element at an index
 def replace_in_list(my_list, idx, element):
-    my_list[idx] = element
+    '''replacement in a list'''
 
     if idx < 0:
         return my_list
