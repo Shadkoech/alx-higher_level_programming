@@ -2,11 +2,9 @@
 
 def multiple_returns(sentence):
     """function returning a tuple with len of string and first char"""
-
     my_tuple = ()
     x = len(sentence)
     y = sentence[0]
-
     if x == 0:
         my_tuple = 0, "None"
     else:
