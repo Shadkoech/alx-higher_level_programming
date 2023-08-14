@@ -9,4 +9,4 @@ def multiple_returns(sentence):
         kl_tuple = (0, None)
     else:
         kl_tuple = (len(sentence), sentence[0])
-        return kl_tuple
+    return kl_tuple
