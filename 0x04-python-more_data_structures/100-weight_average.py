@@ -1,4 +1,4 @@
-#!/usr/bin/ls
+#!/usr/bin/python3
 
 def weight_average(my_list=[]):
     """function returning a weighted average of an integer
