@@ -40,7 +40,7 @@ listint_t *insert_node(listint_t **head, int number)
 	/*insertion at the end */
 	else if (temp == NULL)
 	{
-		prev->next = newnode;
+		add_nodeint_end(head, number);
 	}
 	/*insertion in the middle*/
 	else
