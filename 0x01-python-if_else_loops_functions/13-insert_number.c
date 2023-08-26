@@ -31,12 +31,18 @@ listint_t *insert_node(listint_t **head, int number)
 		prev = temp;
 		temp = temp->next;
 	}
-
+	/*insertion at the beginning*/
 	if (prev == NULL)
 	{
 		newnode->next = (*head);
 		(*head) = newnode;
 	}
+	/*insertion at the end */
+	else if (temp == NULL)
+	{
+		prev->next = newnode;
+	}
+	/*insertion in the middle*/
 	else
 	{
 		prev->next = newnode;
