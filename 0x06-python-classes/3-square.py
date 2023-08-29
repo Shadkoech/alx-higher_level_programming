@@ -1,11 +1,13 @@
 #!/usr/bin/python3
 
-# A build up on previous 1-square.py
-""" A representation of a class square that defines a square"""
+# Build-up on the square from Q2
+# Not allowed to import module
+"""Defines a square"""
 
 
 class Square:
-    """This class defines a square by the following"""
+    """Further defines a square by use of
+    public instance method"""
 
     def __init__(self, size=0):
         """size attribute must be an integer and more than zero"""
@@ -16,3 +18,7 @@ class Square:
             raise ValueError("size must be >= 0")
 
         self.__size = size
+
+    def area(self):
+        """Calc and returns the area of the square"""
+        return self.__size ** 2
