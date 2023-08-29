@@ -10,7 +10,7 @@ class Square:
     public instance method"""
 
     def __init__(self, size=0):
-        """size attribute must be an integer and more than zero"""
+        """size attribute must be an integer and larger than zero"""
 
         if type(size) is not int:
             raise TypeError("size must be an integer")

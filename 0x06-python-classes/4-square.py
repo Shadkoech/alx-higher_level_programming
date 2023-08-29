@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-# Build-up on the square from Q2
+# A Build-up on the square from Q-3
 """Defines a square"""
 
 
@@ -10,7 +10,7 @@ class Square:
 
     def __init__(self, size=0):
         """size attribute must be an integer and
-        more than zero"""
+        larger than zero"""
         self.__size = size
 
     @property
