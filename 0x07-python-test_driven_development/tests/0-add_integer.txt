@@ -1,0 +1,101 @@
+# doctest file for  def add_integer(a, b=98) which is a function adding two integers
+===============================
+
+How to Use 0-add_integer.py
+===============================
+This python file has one function called add_integer
+
+
+Numbers
+=======
+''add_integer'' function takes two integers a and b then adds them up.
+The numbers must be strictly of type int.
+
+
+The process of importing ad_integer function from module
+::
+	>>> add_integer = __import__('0-add_integer').add_integer
+	>>> add_integer(8, 9)
+	17
+
+Addition of a positive number and a negative one
+::
+	>>> add_integer(4, -5)
+	-1
+
+Addition of floats
+::
+	>>> add_integer(4.5, 6.8)
+	10
+
+Addition of negative floats
+::
+	>>> add_integer(-4.5, 6.8)
+	2
+
+Adding a float and an integer
+::
+	>>> add_integer(6.5, 6)
+	12
+
+Having the second argument as 98 just by default
+::
+	>>> add_integer(-100)
+	-2
+
+
+Non-Numbers
+=======
+The function add_integers only takes integers or floats(typecasted to int)
+So, if any input is neither int/float an error should be raised
+
+Adding a string to an integer
+::
+	>>> add_integer("python", 5)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+When b input is a string
+::
+	>>> add_integer(10, "python")
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+When input a is voided
+::
+	>>> add_integer(None)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+When the initialized b is voided
+::
+	>>> add_integer(50, None)
+	Traceback (most recent call last):
+	TypeError: b must be an integer
+
+When both a and b are voided
+::
+	>>> add_integer(None, None)
+	Traceback (most recent call last):
+	TypeError: a must be an integer
+
+When both a and b are left blank
+::
+        #  >>> add_integer()
+	Traceback (most recent call last):
+	TypeError: add_integer() missing 1 required positional argument: 'a'	
+
+	
+
+
+Passing an infinite value 'inf' as an input
+::
+	>>> add_integer(float('inf'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
+
+Passing an infinite on b
+::
+	>>> add_integer(4, float('inf'))
+	Traceback (most recent call last):
+	OverflowError: cannot convert float infinity to integer
