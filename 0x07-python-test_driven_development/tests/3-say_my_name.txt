@@ -1,0 +1,44 @@
+# doctest file for 3-say_my_name.py
+===============================
+
+How to Use 3-say_my_name.py
+===============================
+This python file has one function called say_my_name that takes two
+parameters first_name and second_name and then prints them out
+
+
+importing the say_my_name function from module
+::
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Passing the full names
+::
+	>>> say_my_name("Kimalel", "Koech")
+	My name is Kimalel Koech
+
+Passing spaced name strings
+::
+	>>> say_my_name("Shadrack K", "Koech")
+	My name is Shadrack K Koech
+
+Handling errors
+===============
+The two parameters to the functions must be strings and an error is raised otherwise
+
+Passing an integer as the first parameter
+::
+	>>> say_my_name(7, "Koech")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+Passing any other datatype to second parameter
+::
+	>>> say_my_name("Jude", 10)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+Passing None to either names
+::
+	>>> say_my_name(None, "Hermes")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
