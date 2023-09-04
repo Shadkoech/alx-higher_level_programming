@@ -4,8 +4,9 @@ A class Rectangle that defines a rectangle by:
     - Private instance attribute width
     - Private instance attribute height
     - public instance method that calculates the area
-    - Public instance method that calculates perimeter
     - Use of __str__() method to print rectangle with char #
+    - Use of repr() to return a string representation of the
+    rectangle to be able to create a new instance by eval()
 The width and height must be integers otherwise
 Raises:
     TypeError: width must be an integer
@@ -65,3 +66,9 @@ class Rectangle:
             return ""
         else:
             return "\n".join(['#' * self.width] * self.height)
+
+    def __repr__(self):
+        """return a string representation of the object with format
+        "Rectangle(width, height)". It is therefore possible to create
+        Rectangle with same attr using eval"""
+        return "Rectangle({}, {})".format(self.width, self.height)

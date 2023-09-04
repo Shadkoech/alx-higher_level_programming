@@ -5,7 +5,7 @@ This is a continuation of file 0x06-python-classes and has more on class concept
 Task 0 - Empty class creation named Rectangle
 Task 1 - Setting class private attributes which are the width and height parameters
 Task 2 - Setting public method of calculating the area and perimeter of a rectangle
-Task 3 - Use of public method on public instance
+Task 3 - Use of def str() method to print out a rectangle of #
 Task 4 - Use of repr() and eval functions
 Task 5 - Use of str() function
 Task 6 - Use of property setter and getter methods
