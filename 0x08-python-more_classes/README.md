@@ -9,6 +9,6 @@ Task 3 - Use of def str() method to print out a rectangle of #
 Task 4 - Use of repr() and eval functions
 Task 5 - Use of the destructor del() to destroy an instance
 Task 6 - Building the Rectangle class more by adding a public class attribute
-Task 7 - More use of str() and repr
+Task 7 - More use of str() and a public instance
 Task 8 - Use of static method and class
 Task 9 - Use of static method
