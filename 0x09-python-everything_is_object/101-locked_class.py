@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-A class LockedClass that only takes first name as the 
+A class LockedClass that only takes first name as the
 only attribute and prevents dynamic addition of any
 other attributes
 """
