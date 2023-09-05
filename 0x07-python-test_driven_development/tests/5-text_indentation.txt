@@ -1,0 +1,68 @@
+# doctest file for 5-text_indentation.py
+========================================
+
+How to use 5-text_indentation.py
+================================
+This is a file that contains a function called text_indentation which prints
+text with  new lines upon hitting any of this .,? or : . There
+should be no space at beginning or end each printed line
+TypeError should be raised if the text is not a string
+
+Succeeding cases
+==========
+importing text_identation function from module
+
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+
+Encountering a number of full colons
+
+	>>> text_indentation("I came. I saw. I conquered")
+	I came.
+	<BLANKLINE>
+	I saw.
+	<BLANKLINE>
+	I conquered
+
+New line on hitting a question mark
+
+	>>> text_indentation("Can I ask a question?")
+	Can I ask a question?
+	<BLANKLINE>
+
+Space at the beginning of a text
+
+	>>> text_indentation("  Know your worth")
+	Know your worth
+
+Spaces at the end of a text also ignored
+
+	# >>> text_indentation("Know your worth    ")
+	Know your worth
+
+Prints other new lines well
+
+	>>> text_indentation(" \nStay foolish, Stay hungry")
+	<BLANKLINE>
+	Stay foolish, Stay hungry
+
+
+Failing cases
+=============
+
+Passing something other than a string
+
+	>>> text_indentation(50)
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+Having mixed data types
+
+	# >>> text_indentation(500, elephants )
+	Traceback (most recent call last):
+	TypeError: text must be a string
+
+Passing nothing to the function
+
+	>>> text_indentation(None)
+	Traceback (most recent call last):
+	TypeError: text must be a string
