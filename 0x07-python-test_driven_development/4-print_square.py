@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 """
 print_square - Function that prints a square with the character #
 Arg:

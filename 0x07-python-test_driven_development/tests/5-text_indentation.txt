@@ -4,7 +4,7 @@
 How to use 5-text_indentation.py
 ================================
 This is a file that contains a function called text_indentation which prints
-text with  new lines upon hitting any of this .,? or : . There
+text with  new lines upon hitting any of this . ? or : . There
 should be no space at beginning or end each printed line
 TypeError should be raised if the text is not a string
 
