@@ -30,6 +30,16 @@ class TestMaxInteger(unittest.TestCase):
         empty = []
         self.assertEqual(max_integer(empty), None)
 
+    def test_max_beg(self):
+        """gets max value at beginning of list"""
+        max_beginning = [15, 5, -8, 9, 3]
+        self.assertEqual(max_integer(max_beginning), 15)
+
+    def only_negatives(self):
+        """gets a maximum value from a list of negative numbers"""
+        negative_list = [-5, -7, -15, -30, - 18]
+        self.assertEqual(max_integer(negative_list), -5)
+
     def test_one_element(self):
         """checks a list of one element"""
         one_list = [5]
