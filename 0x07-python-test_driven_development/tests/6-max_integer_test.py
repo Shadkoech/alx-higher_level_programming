@@ -32,8 +32,14 @@ class TestMaxInteger(unittest.TestCase):
 
     def test_max_beg(self):
         """gets max value at beginning of list"""
-        max_beginning = [15, 5, -8, 9, 3]
+        max_beginning = [15, 5, 8, 9, 3]
         self.assertEqual(max_integer(max_beginning), 15)
+
+    def test_non_int(self):
+        """test for non-integer integer"""
+        stringed = [8, 9, "koech", 3]
+        with self.assertRaises(TypeError):
+            max_integer(stringed)
 
     def only_negatives(self):
         """gets a maximum value from a list of negative numbers"""
@@ -45,11 +51,20 @@ class TestMaxInteger(unittest.TestCase):
         one_list = [5]
         self.assertEqual(max_integer(one_list), 5)
 
+    def test_none(self):
+        """tests for none as argument """
+        with self.assertRaises(TypeError):
+            max_integer(None)
+
+    def only_negative(self):
+        """checks one negative number"""
+        one_negative = [5, 9, 8, -7, 18, 20]
+        self.assertEqual(max_integer(one_negative), 20)
+
     def test_floats(self):
         """gets max from floats and its"""
         float = [1.8, 17.55, 2, 9, 22.30, 15]
         self.assertEqual(max_integer(float), 22.30)
-
 
 if __name__ == '__main__':
     unittest.main()
