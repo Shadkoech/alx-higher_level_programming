@@ -26,7 +26,8 @@ def crack_nqueens(n):
         otherwise return False"""
 
         for i in range(row):
-            if board[i] == col or board[i] - col == i - row or board[i] - col == row - i:
+            if board[i] == col or board[i] - col == i - row or
+            board[i] - col == row - i:
                 return False
         return True
 
