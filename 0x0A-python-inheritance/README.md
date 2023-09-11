@@ -3,6 +3,7 @@ This directory contains exercises and tasks on an important aspect of python as 
 	* What is a subclass/child/derived class
 	* What is a superclass/parent/baseclass for that matter
 	* Ways of listing all attributes and methods in a class
+
 	* How to inherit a class from another
 	* How to define a class with multiple base classes
 	* How to override a method or attribute that is inherited from the base class
@@ -21,3 +22,12 @@ The tasks handled and the key concept are as follows
 
 ### Task 3: Same class or inherit from
 	- def is_kind_of_class(obj, a_class): - Function returning True if onject is an instance of child of parent class and False otherwise
+
+### Task 4: Only sub class of
+	- def inherits_from(obj, a_class): - Checks if an object is part of a particular class or a class that the specified class inherited from
+
+### Task 5: Geometry module
+	- Writing out an empty class called BaseGeometry
+
+### Task 6: Improve Geometry
+	- def area(self): - A method that calculates the area. Raises an exception in the case area cannot be calculated 
