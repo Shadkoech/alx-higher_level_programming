@@ -15,3 +15,9 @@ The tasks handled and the key concept are as follows
 
 ### Task 1: My list
 	- def print_sorted(self): - A new child class that inherits from baseclass called list
+
+### Task 2: Exact same object
+	- def is_same_class(obj, a_class): - A function that returns True if the object is an instance of specified class and False otherwise
+
+### Task 3: Same class or inherit from
+	- def is_kind_of_class(obj, a_class): - Function returning True if onject is an instance of child of parent class and False otherwise
