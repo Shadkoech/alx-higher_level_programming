@@ -16,21 +16,21 @@ Successful cases
 Passing a jumbled up list
 
 	>>> x = [8, 5, 2, 7, 9]
-	>>> list = MyList(x)
-	>>> list.print_sorted()
+	>>> my_list = MyList(x)
+	>>> my_list.print_sorted()
 	[2, 5, 7, 8, 9]
 
 passing empty list
 
 	>>> x = []
-	>>> list = MyList(x)
-	>>>list.print_sorted()
+	>>> my_list = MyList(x)
+	>>>my_list.print_sorted()
 	[]
 
 Passing a string
 
-	>>> list = MyList("hello")
-	>>> list
+	>>> my_list = MyList("hello")
+	>>> my_list
 	['h', 'e', 'l', 'l', 'o']
 
 	>>> list.print_sorted()
@@ -38,10 +38,10 @@ Passing a string
 
 create a list
 
-	>>> list = MyList()
-	>>> list.append(5)
-	>>> list.append(4)
-	>>> list.append(1)
-	>>> list.append(7)
-	>>> list.print_sorted()
+	>>> my_list = MyList()
+	>>> my_list.append(5)
+	>>> my_list.append(4)
+	>>> my_list.append(1)
+	>>> my_list.append(7)
+	>>> my_list.print_sorted()
 	[1, 4, 5, 7]
