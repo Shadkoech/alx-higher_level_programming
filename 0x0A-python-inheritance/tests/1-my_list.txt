@@ -1,0 +1,47 @@
+# doctest file for def print_sorted(self) a method prints out a list in ascending order
+===============================
+
+How to Use 1-my_list.py
+===============================
+This python file has one function called print_sorted
+
+
+importation of the module
+
+	>>> MyList = __import__('1-my_list').MyList
+
+Successful cases
+================
+
+Passing a jumbled up list
+
+	>>> x = [8, 5, 2, 7, 9]
+	>>> list = MyList(x)
+	>>> list.print_sorted()
+	[2, 5, 7, 8, 9]
+
+passing empty list
+
+	>>> x = []
+	>>> list = MyList(x)
+	>>>list.print_sorted()
+	[]
+
+Passing a string
+
+	>>> list = MyList("hello")
+	>>> list
+	['h', 'e', 'l', 'l', 'o']
+
+	>>> list.print_sorted()
+	['e', 'h', 'l', 'l', 'o']
+
+create a list
+
+	>>> list = MyList()
+	>>> list.append(5)
+	>>> list.append(4)
+	>>> list.append(1)
+	>>> list.append(7)
+	>>> list.print_sorted()
+	[1, 4, 5, 7]

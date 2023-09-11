@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 """
-A module that creates a new class MyInt that inherits
-From int
-MyInt class is a rebel and has == and != inverted
+A module that creates a new class MyInt that inherits From int
 """
 
 
