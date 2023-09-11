@@ -30,4 +30,25 @@ The tasks handled and the key concept are as follows
 	- Writing out an empty class called BaseGeometry
 
 ### Task 6: Improve Geometry
-	- def area(self): - A method that calculates the area. Raises an exception in the case area cannot be calculated 
+	- def area(self): - A method that calculates the area. Raises an exception in the case area cannot be calculated
+
+### Task 7: Integer validator
+	- def integer_validator(self, name, value): - Public instance method that validates value. Ensures that it is of type integer and is more than 0
+
+### Task 8: Rectangle
+	- Rectangle is a derived class that inherits from BaseGeometry
+	- def __init__(self, width, height): - Rectangle method that instatiates height and width
+
+### Task 9: Full rectangle
+	- Implements the area method from Base Geometry which is an inherited class
+	- Width and height validated by integer validator must be positive integer and private
+
+### Task 10: Square
+	- class Square that inherits from class Rectangle
+	- def __init__(self, size): - Instatiates the size of the rectangle which must be private
+
+
+### Task 11: Square #2
+	- Buildup of class Square in Task 10 above
+	- implements the area method up up from class Geometry
+

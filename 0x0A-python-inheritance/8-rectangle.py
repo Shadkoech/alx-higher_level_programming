@@ -25,12 +25,28 @@ class BaseGeometry:
         Method that validates value
         Args:
             name (str): name of value in question
-            value: actual value to be validated
+            value (int): actual value to be validated
         Raises:
             TypeError: if value is not int
             ValueError: if value is less or equal to 0
         """
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError("{} must be an integer".format(name))
         if value <= 0:
             raise ValueError("{} must be greater than 0".format(name))
+
+
+class Rectangle(BaseGeometry):
+    """
+    New class that is a child/derived class of BaseGeometry
+    """
+    def __init__(self, width, height):
+        """class constructor for initializing Rectangle's width and Height
+        Args:
+            width(int): width of Rectangle
+            height(int): height of Rectangle
+        """
+        self.integer_validator("width", width)
+        self.__width = width
+        self.integer_validator("height", height)
+        self.__height = height
