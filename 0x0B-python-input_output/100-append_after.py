@@ -29,4 +29,4 @@ def append_after(filename="", search_string="", new_string=""):
         for line in text:
             f.write(line)
             if search_string in line:
-                f.write(new_string + '\n')
+                f.write(new_string)
