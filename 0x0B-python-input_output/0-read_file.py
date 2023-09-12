@@ -3,6 +3,7 @@
 Function that reads a text file using UTF-8
 """
 
+
 def read_file(filename=""):
     """
     read_file - function that read a text file using UTF-8
@@ -12,5 +13,5 @@ def read_file(filename=""):
     """
 
     with open(filename, encoding="utf-8") as f:
-        textfile= f.read()
+        textfile = f.read()
         print(textfile, end="")
