@@ -1,5 +1,6 @@
 ## 0x0B. Python - Input/Output
 This directory contains various concepts on how python handles text and binary files in terms of opening them, reading, writing into files, appending, closing files etc. Through the help of question and tasks the following key questions finds answers:
+
 	* How do you open a file
 	* How to read, write or append a file
 	* How to read the full content of a file
