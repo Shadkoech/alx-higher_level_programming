@@ -1,10 +1,11 @@
 #!/usr/bin/python3
-import sys
 
 """
 A Python script that adds all available arguments to a python list
 then saves them all to a given file
 """
+import sys
+
 
 if __name__ == "__main__":
     """function that specifies what block of code ought
