@@ -80,3 +80,10 @@ class Rectangle(Base):
 
         for i in range(self.height):
             print("#" * self.width)
+
+    def __str__(self):
+        """updating the class Rectangle by overriding the __str__method
+        in order to return [Rectangle] (<id>) <x>/<y> - <width>/<height>
+        """
+        return ("[Rectangle] ({}) {}/{} - {}/{}".format
+                (self.id, self.x, self.y, self.width, self.height))
