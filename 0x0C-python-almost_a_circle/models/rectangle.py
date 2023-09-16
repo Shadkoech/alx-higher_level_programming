@@ -77,4 +77,6 @@ class Rectangle(Base):
 
     def display(self):
         """Method that prints rectangle instance using character #"""
-        return('/n'.join(['#' * self.width] * self.height))
+
+        for i in range(self.height):
+            print("#" * self.width)
