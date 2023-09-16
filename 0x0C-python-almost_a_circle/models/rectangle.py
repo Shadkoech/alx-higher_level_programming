@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 """ A module of class rectangle that inherits from Class Base"""
 
+from models.base import Base
+
 
 class Rectangle(Base):
     """Defining a class Rectangle which is a subclass to Base"""
@@ -75,4 +77,4 @@ class Rectangle(Base):
 
     def display(self):
         """Method that prints rectangle instance using character #"""
-        return(/n.join(['#' * self.width] * self.height))
+        return('/n'.join(['#' * self.width] * self.height))
