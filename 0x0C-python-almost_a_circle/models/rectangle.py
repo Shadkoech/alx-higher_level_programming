@@ -89,7 +89,7 @@ class Rectangle(Base):
         return ("[Rectangle] ({}) {}/{} - {}/{}".format
                 (self.id, self.x, self.y, self.width, self.height))
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Method that assigns an argument to every other attribute"""
         # the key thing to note is that *args packs arguments in a tuple
         # that means the arguments can be indexed
@@ -107,3 +107,18 @@ class Rectangle(Base):
                     self.x = args[i]
                 elif i == 4:
                     self.y = args[i]
+
+        else:
+            for key, value in kwargs.items():
+                if key == "id":
+                    if not isinstance(value, int):
+                        raise TypeError("id must be an integer")
+                    self.id = value
+                elif key == "width":
+                    self.width = value
+                elif key == "height":
+                    self.height = value
+                elif key == "x":
+                    self.x = value
+                elif key == "y":
+                    self.y = value
