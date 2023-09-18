@@ -103,12 +103,13 @@ class TestRectangle(unittest.TestCase):
         with self.assertRaises(TypeError) as cm:
             r1 = Rectangle(5)
             r1.area()
-        self.assertEqual("__init__() missing 1 required positional argument: 'height'", str(cm.exception))
+        self.assertEqual(
+            "__init__() missing 1 required positional argument: 'height'", str(
+                cm.exception))
 
     # def test_display(self):
         """Method that checks how the rectangle is displayed in the
         stdout"""
-
 
     def test_str(self):
         """method that checks the str representation"""
@@ -120,16 +121,6 @@ class TestRectangle(unittest.TestCase):
 
         r3 = Rectangle(3, 8)
         self.assertEqual(str(r3), "[Rectangle] (2) 0/0 - 3/8")
-
-
-
-
-
-
-
-
-
-
 
 
 if __name__ == '__main__':
