@@ -75,7 +75,7 @@ class Base:
         try:
             with open(filename, "r") as f:
                 json_string = f.read()
-                dictionary_list= cls.from_json_string(json_string)
+                dictionary_list = cls.from_json_string(json_string)
                 for item in dictionary_list:
                     instance = cls.create(**item)
                     instance_list.append(instance)
@@ -84,8 +84,44 @@ class Base:
 
         return instance_list
 
+    # Advanced tasks
+    # serialization and deserialization in CSV
 
+    @classmethod
+    def save_to_file_csv(cls, list_objs):
+        """Method that performs serialization on list_objs in CSV format
+        then saves it to a file"""
 
+        filename = cls.__name__ + ".csv"
+        with open(filename, "w") as f:
+            if list_objs is not None:
+                list_objs = [i.to_dictionary() for i in list_objs]
 
+                if cls.__name__ == "Rectangle":
+                    fields = ["id", "width", "height", "x", "y"]
+                if cls.__name__ == "Square":
+                    fields = ["id", "size", "x", "y"]
 
+                writer = csv.DictWriter(f, fieldnames=fields)
+                writer.writeheader()
+                writer.writerows(list_objs)
 
+    @classmethod
+    def load_from_file_csv(cls):
+        """Method that deserializes list of instances in CSV both
+        filed and file names"""
+
+        filename = cls.__name__ + ".csv"
+        instance_list = []
+        try:
+            with open(filename, "r") as f:
+                result = csv.DictReader(f)
+                for row in result:
+                    row = dict(row)
+                    for key in row:
+                        row[key] = int(row[key])
+                    instance = cls.create(**row)
+                    instance_list.append(instance)
+        except FileNotFoundError:
+            pass
+        return instance_list
