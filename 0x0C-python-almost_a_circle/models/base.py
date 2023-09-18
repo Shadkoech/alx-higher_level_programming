@@ -53,3 +53,18 @@ class Base:
             return "[]"
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """class method that returns an instance with all the set
+        attributes that will be used for the deserialization of a
+        csv file"""
+        if cls.__name__ == "Rectangle":
+            new_instance = cls(4, 6)
+        if cls.__name__ == "Square":
+            new_instance = cls(4)
+
+        new_instance.update(**dictionary)
+        return new_instance
+
+
