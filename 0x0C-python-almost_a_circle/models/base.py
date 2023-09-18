@@ -2,6 +2,8 @@
 """
 This is a base for all the classes herein
 """
+import json
+import csv
 
 
 class Base:
@@ -16,3 +18,28 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """Method that returns JSON string representation of list of
+        dictionaries"""
+
+        if list_dictionaries is None or list_dictionaries == []:
+            return "[]"
+        else:
+            return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """class method that writes JSON string representation of
+        list_objs to a file"""
+
+        file_name = cls.__name__ + ".json"
+
+        with open(file_name, "w") as json_file:
+            if list_objs is None:
+                json_file.write("[]")
+
+            else:
+                list_dictionaries = [o.to_dictionary() for o in list_objs]
+                json_file.write(Base.to_json_string(list_dictionaries))
