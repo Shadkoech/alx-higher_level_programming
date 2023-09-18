@@ -43,3 +43,13 @@ class Base:
             else:
                 list_dictionaries = [o.to_dictionary() for o in list_objs]
                 json_file.write(Base.to_json_string(list_dictionaries))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """Method that returns list of JSON string
+        representation json_string"""
+
+        if json_string is None or json_string == []:
+            return "[]"
+        else:
+            return json.loads(json_string)
