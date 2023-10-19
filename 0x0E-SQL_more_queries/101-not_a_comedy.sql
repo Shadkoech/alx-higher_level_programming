@@ -4,11 +4,10 @@
 
 SELECT title
 FROM tv_shows
-WHERE id NOT IN(
-	SELECT DISTINCT s.id
-	FROM tv_shows AS s
-	JOIN tv_show_genres AS g ON s.id = g.show_id
-	JOIN tv_genres AS g ON s.genre_id = g.id
-	WHERE g.name = "Comedy")
- ORDER BY title ASC;
-
+WHERE id NOT IN (
+	    SELECT DISTINCT ts.id
+	    FROM tv_shows AS ts
+	    JOIN tv_show_genres AS tsg ON ts.id = tsg.show_id
+	    JOIN tv_genres AS tg ON tsg.genre_id = tg.id
+	    WHERE tg.name = 'Comedy')
+ORDER BY title ASC;
