@@ -8,3 +8,5 @@ Herein are more tasks and practices based on advanced concepts of SQL in the man
 	- Use of various constraints NOT NULL, UNIQUE
 	- Subqueries
 	- Use of JOIN and UNION
+
+## Files 
