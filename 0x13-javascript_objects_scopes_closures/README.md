@@ -68,7 +68,14 @@ Create an instance method called print() that prints the rectangle using the cha
 
 
 
-## Task
+## Task 4 : Rectangle #4
+
+File:
+
+	- 4-rectangle.js
+Write a class Rectangle  Building on previous task that defines a rectangle:
+Create an instance method called rotate() that exchanges the width and the height of the rectangle
+Create an instance method called double() that multiples the width and the height of the rectangle by 2
 
 
 
