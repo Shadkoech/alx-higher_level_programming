@@ -23,7 +23,7 @@ if __name__ == '__main__':
         FROM cities
         LEFT JOIN states ON states.id = cities.state_id
         WHERE states.name = %s
-        ORDER BY cities.id ASC""", (sys.argv[4]))
+        ORDER BY cities.id ASC""", (sys.argv[4],))
 
     selected_rows = cur.fetchall()
 
