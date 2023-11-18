@@ -58,7 +58,7 @@ This folder (0x0F. Python - Object-relational mapping) contains a number of indi
 File:
 
 	- 0-select_states.py
-Write a script that lists all states from the database hbtn_0e_0_usa:
+A script that lists all states from the database hbtn_0e_0_usa:
 
 Your script should take 3 arguments: mysql username, mysql password and database name (no argument validation needed)
 You must use the module MySQLdb (import MySQLdb)
@@ -67,19 +67,42 @@ Results must be sorted in ascending order by states.id
 
 
 
-## Task
+## Task 1: Filter states
+
+File:
+
+	- 1-filter_states.py
+A script that lists all states with a name starting with N (upper N) from the database hbtn_0e_0_usa:
+Build on the previous task;
 
 
 
-## Task
+## Task 2: Filter states by user input
+
+File:
+
+	- 2-my_filter_states.py
+Python script that builds on the previous (1-filter_states.py) and  takes in an argument and displays all values in the states table of hbtn_0e_0_usa where name matches the argument.
+You must use format to create the SQL query with the user input
+Results must be sorted in ascending order by states.id
 
 
 
-## Task
+## Task 3: SQL Injection...
+
+File:
+
+	- 3-my_safe_filter_states.py
+A python script same as 2-my_filter_states.py but this time safe from MySQL injections
 
 
 
-## Task
+## Task 4: Cities by states
+
+File:
+
+	- 4-cities_by_state.py
+Write a script that lists all cities from the database hbtn_0e_4_usa. Builds from the previous 3-my_safe_filter_states.py but can only be executed once
 
 
 
