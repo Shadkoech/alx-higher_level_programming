@@ -6,7 +6,6 @@
 if __name__ == '__main__':
 
     import sys
-    from sys import argv
     from sqlalchemy import create_engine
     from sqlalchemy.orm import sessionmaker
     from relationship_city import City
