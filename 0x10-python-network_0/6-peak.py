@@ -24,20 +24,20 @@ def find_peak(list_of_integers):
         return u_list[midpoint]
 
     elif midpoint - 1 < 0:
-        if u_list[midpoint] > u_list[midpoint +1]:
+        if u_list[midpoint] > u_list[midpoint + 1]:
             return u_list[midpoint]
         else:
-            return u_list[midpoint +1]
+            return u_list[midpoint + 1]
 
     elif midpoint + 1 >= length:
         if u_list[midpoint] > u_list[midpoint - 1]:
             return u_list[midpoint]
         else:
-            return u_list[midpoint -1]
+            return u_list[midpoint - 1]
 
     if u_list[midpoint - 1] < u_list[midpoint] > u_list[midpoint + 1]:
         return u_list[midpoint]
 
-    if u_list[midpoint + 1] > u_list[midpoint -1]:
+    if u_list[midpoint + 1] > u_list[midpoint - 1]:
         return find_peak(u_list[midpoint:])
     return find_peak(u_list[:midpoint])
