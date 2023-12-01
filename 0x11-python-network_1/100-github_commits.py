@@ -13,7 +13,7 @@ if __name__ == "__main__":
     repo_name = sys.argv[1]
     user = sys.argv[2]
     url = ('https://api.github.com/repos/{}/{}/commits'
-           .format(repo_name, user))
+           .format(user, repo_name))
 
     req = requests.get(url)
     if req.status_code == 200:
