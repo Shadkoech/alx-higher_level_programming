@@ -17,7 +17,7 @@ if __name__ == "__main__":
     data = {"q": q}
 
     try:
-        req = requests.get(url, data=data)
+        req = requests.post(url, data=data)
         req_json = req.json()
 
         if req_json:
