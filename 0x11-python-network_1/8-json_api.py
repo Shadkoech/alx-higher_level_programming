@@ -21,7 +21,7 @@ if __name__ == "__main__":
         req_json = req.json()
 
         if req_json:
-            print(f"[{response_json['id']}] {response_json['name']}")
+            print(f"[{req_json['id']}] {req_json['name']}")
         else:
             print("No result")
 
