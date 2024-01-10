@@ -6,7 +6,5 @@ document.addEventListener('DOMContentLoaded', () => {
   // check if the header element has been found
   if (headerElement) {
     headerElement.style.color = '#FF0000';
-  } else {
-    console.error('Error: <header> element not found');
   }
 });
